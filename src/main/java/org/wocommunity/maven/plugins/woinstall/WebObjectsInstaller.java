@@ -26,7 +26,6 @@ public enum WebObjectsInstaller {
 			"https://download.info.apple.com/Mac_OS_X/061-4634.20080915.3ijd0/WebObjects543.dmg",
 			"3d671b7513b12aa06dde2b14acb746c9a0a505bc8bc47340337d6ae127dfb0d8",
 			153786259L,
-			166167249L,
 			58556928L,
 			107601091L) {
 		@Override
@@ -46,7 +45,6 @@ public enum WebObjectsInstaller {
 			"https://download.info.apple.com/Mac_OS_X/061-2998.20070215.33woU/WebObjects5.3.3Update.dmg",
 			"bedc14cbcb82a2a64415f2f322a9ccc6bb400aab72895c5fe9f086d085bc8698",
 			51252394L,
-			42321716L,
 			11608064L,
 			29672581L) {
 		@Override
@@ -69,14 +67,12 @@ public enum WebObjectsInstaller {
 			final String url,
 			final String checksum,
 			final Long rawLength,
-			final Long fileLength,
 			final Long entryOffset,
 			final Long entryLength) {
 		this.version = version;
 		this.url = url;
 		this.checksum = checksum;
 		this.rawLength = rawLength;
-		this.fileLength = fileLength;
 		this.entryOffset = entryOffset;
 		this.entryLength = entryLength;
 	}
@@ -85,7 +81,6 @@ public enum WebObjectsInstaller {
 	private final String url;
 	private final String checksum;
 	private final Long rawLength;
-	private final Long fileLength;
 	private final Long entryOffset;
 	private final Long entryLength;
 
@@ -139,10 +134,6 @@ public enum WebObjectsInstaller {
 
 	public Long getRawLength() {
 		return rawLength;
-	}
-
-	public Long getFileLength() {
-		return fileLength;
 	}
 
 	public Long getEntryOffset() {
