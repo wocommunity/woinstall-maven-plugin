@@ -33,7 +33,7 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/wocommunity/woinstall-maven-plugin.git</connection>
+		<connection>scm:git:git://github.com:wocommunity/woinstall-maven-plugin.git</connection>
 		<developerConnection>scm:git:git://github.com:wocommunity/woinstall-maven-plugin.git</developerConnection>
 		<url>http://github.com/wocommunity/woinstall-maven-plugin/tree/master</url>
 	</scm>
