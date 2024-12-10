@@ -14,10 +14,30 @@
 		which downloads a webobjects installer, explodes it out into a next_root
 		directory, and then installs the artifacts and a bom to the local maven
 		repository.</description>
-
-	<!-- FIXME change it to the project's website -->
 	<url>https://wocommunity.org</url>
 
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Ramsey Gurley</name>
+			<email>ramseygurley@gmail.com</email>
+			<organization>WOCommunity</organization>
+			<organizationUrl>https://github.com/wocommunity/</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/wocommunity/woinstall-maven-plugin.git</connection>
+		<developerConnection>scm:git:git://github.com:wocommunity/woinstall-maven-plugin.git</developerConnection>
+		<url>http://github.com/wocommunity/woinstall-maven-plugin/tree/master</url>
+	</scm>
+	
 	<prerequisites>
 		<maven>3.6.3</maven>
 	</prerequisites>
