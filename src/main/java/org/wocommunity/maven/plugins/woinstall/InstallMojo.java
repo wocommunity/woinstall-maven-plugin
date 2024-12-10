@@ -122,6 +122,7 @@ public class InstallMojo extends AbstractMojo {
 
 		// print location of .next_root and dmg
 		LOG.info("WebObjects installation complete");
+		LOG.info(installer.getLicenseText());
 		LOG.info("WebObjects installer archive located at {}", installer.getInstallerFile(localRepo).getPath());
 		LOG.info("WebObjects NEXT_ROOT directory located at {}", installer.getNextRoot(localRepo).getPath());
 	}
